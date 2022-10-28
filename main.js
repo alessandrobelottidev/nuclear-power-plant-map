@@ -1,3 +1,5 @@
+import iconUrl from './power-plant.png'
+
 const map = L.map('map')
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -5,7 +7,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map)
 
 const powerPlantIcon = L.icon({
-	iconUrl: 'power-plant.png',
+	iconUrl: iconUrl,
 
 	iconSize:     [40, 40], // size of the icon
 	iconAnchor:   [20, 40], // point of the icon which will correspond to marker's location
