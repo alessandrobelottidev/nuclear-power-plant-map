@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaflet Nuclear Map</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
+
+		<link href="https://cdn.jsdelivr.net/npm/daisyui@2.33.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="app" class="relative">			
+			<div class="toast toast-top toast-center z-20 min-w-max">
+				<h1 class="text-2xl text-center bg-green-400 font-bold p-2 rounded-md shadow-md">☢️ Mappa centrali nucleari ☢️</h1>
+			</div>
+			
+			<div id="map" class="h-screen z-0"></div>
+		</div>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
+		<script type="module" src="/main.js"></script>
+  </body>
+</html>
