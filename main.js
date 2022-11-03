@@ -1,3 +1,4 @@
+import './anim.css'
 import iconUrl from './power-plant.png'
 
 const map = L.map('map')
