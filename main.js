@@ -1,11 +1,11 @@
 import './anim.css'
-import * as api from './api'
-import * as mapSettings from './map'
+import * as Api from './Api'
+import * as MapSettings from './Map'
 
 const map = L.map('map')
 
-api.getNuclearPowerPlantsData()
+Api.getNuclearPowerPlantsData()
 .then(data => {
-	mapSettings.initMap(map)
-	mapSettings.setMap(map, data)
+	MapSettings.initMap(map)
+	MapSettings.setMap(map, data)
 })
