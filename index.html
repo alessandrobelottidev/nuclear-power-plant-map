@@ -116,22 +116,5 @@
 
     <!-- Main functionality -->
 		<script type="module" src="/Main.js"></script>
-
-    <!-- Icon refresh animations -->
-    <script>
-      const refreshBtn = document.getElementById('refreshBtn')
-      const refreshIcon = document.getElementById('refreshIcon')
-
-      refreshBtn.addEventListener('click', () => {
-        if (!refreshIcon.classList.contains('rotate-icon')) {
-          refreshIcon.classList.add('rotate-icon')
-        }
-        
-        setTimeout(() => {
-          refreshIcon.classList.remove('rotate-icon')
-        }, 1000)
-      })
-    </script>
-
   </body>
 </html>
